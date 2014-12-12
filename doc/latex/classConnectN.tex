@@ -1,0 +1,325 @@
+\hypertarget{classConnectN}{\section{Connect\+N Class Reference}
+\label{classConnectN}\index{Connect\+N@{Connect\+N}}
+}
+
+
+The \hyperlink{classConnectN}{Connect\+N} game.  
+
+
+
+
+{\ttfamily \#include $<$Connect\+N.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{classConnectN_afbc5b3f1ce192977e53400984d532d1ba8dabbd51219a23e08073e6c946755bc8}{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+O\+W\+E\+R} = 4, 
+\hyperlink{classConnectN_afbc5b3f1ce192977e53400984d532d1bae24544d9408db101c664328a5c00137c}{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+N\+E} = 6, 
+\hyperlink{classConnectN_afbc5b3f1ce192977e53400984d532d1ba1ebbe9aa1e009f66a6c5c022f5ee0e50}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+U\+M\+N} = 7
+ \}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classConnectN_ae4c655de7116f32bf84ba01d8fa09455}{Connect\+N} ()
+\begin{DoxyCompactList}\small\item\em Default \hyperlink{classConnectN}{Connect\+N} constructor. \end{DoxyCompactList}\item 
+\hyperlink{classConnectN_aef059ecefe9eafeae4c9fa8806b14a43}{Connect\+N} (unsigned \hyperlink{classConnectN_a297db626a235c0bebfc276cb4b818cd6}{power}, unsigned \hyperlink{classConnectN_afc8593800090e0d19532e9bdeefabac9}{line}, unsigned \hyperlink{classConnectN_a40cc2c86197b7502276490ec1399b0b4}{column})
+\begin{DoxyCompactList}\small\item\em Custom \hyperlink{classConnectN}{Connect\+N} constructor. \end{DoxyCompactList}\item 
+void \hyperlink{classConnectN_aeacffa2ecadbf102749c668073df72ad}{enroll} (const \hyperlink{classPlayer}{Player} $\ast$player)
+\begin{DoxyCompactList}\small\item\em Enroll a player. \end{DoxyCompactList}\item 
+void \hyperlink{classConnectN_a1bb5f50f1e29d34c48cc9231afe76af6}{play} (unsigned \hyperlink{classConnectN_a40cc2c86197b7502276490ec1399b0b4}{column})
+\begin{DoxyCompactList}\small\item\em Play at the given column. \end{DoxyCompactList}\item 
+unsigned \hyperlink{classConnectN_a297db626a235c0bebfc276cb4b818cd6}{power} () const 
+\begin{DoxyCompactList}\small\item\em Return the number of pieces to align. \end{DoxyCompactList}\item 
+unsigned \hyperlink{classConnectN_afc8593800090e0d19532e9bdeefabac9}{line} () const 
+\begin{DoxyCompactList}\small\item\em Return the number of lines. \end{DoxyCompactList}\item 
+unsigned \hyperlink{classConnectN_a40cc2c86197b7502276490ec1399b0b4}{column} () const 
+\begin{DoxyCompactList}\small\item\em Return the number of columns. \end{DoxyCompactList}\item 
+bool \hyperlink{classConnectN_a52e76a27a6ae77edcf65a24c67cfe83a}{started} () const 
+\begin{DoxyCompactList}\small\item\em Check if the game is started. \end{DoxyCompactList}\item 
+bool \hyperlink{classConnectN_aea9a731ecfed4ec40af668de60b8b311}{finished} () const 
+\begin{DoxyCompactList}\small\item\em Check if the game is finished. \end{DoxyCompactList}\item 
+const \hyperlink{classPlayer}{Player} $\ast$ \hyperlink{classConnectN_a234490fe29ede9056f1fadc4dddd087b}{winner} () const 
+\begin{DoxyCompactList}\small\item\em Return the winner. \end{DoxyCompactList}\item 
+const \hyperlink{classPlayer}{Player} $\ast$ \hyperlink{classConnectN_abaedcab14c58c5fc5621f76a271a7744}{active\+Player} () const 
+\begin{DoxyCompactList}\small\item\em Return the active player. \end{DoxyCompactList}\item 
+const std\+::array$<$ std\+::pair\\*
+$<$ const \hyperlink{classPlayer}{Player} $\ast$, \hyperlink{Color_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color} $>$, 2 $>$ \hyperlink{classConnectN_af9520dc89721a2702c8f6747d3711c44}{players} () const 
+\begin{DoxyCompactList}\small\item\em Return an array of players, associated with their color. \end{DoxyCompactList}\item 
+\hyperlink{Color_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color} \hyperlink{classConnectN_a1f044297c006496edb2fe9f2cdc61f2d}{color} (const \hyperlink{classPlayer}{Player} $\ast$) const 
+\begin{DoxyCompactList}\small\item\em Return the color of the given player. \end{DoxyCompactList}\item 
+const std\+::vector$<$ std\+::vector\\*
+$<$ \hyperlink{Color_8h_ab87bacfdad76e61b9412d7124be44c1c}{Color} $>$ $>$ \& \hyperlink{classConnectN_adc7bac377c8a1ff4976a424bdf6627c8}{board} () const 
+\begin{DoxyCompactList}\small\item\em Return the game board. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{classConnectN_a0098050ba1e1691aa2bab3eeacd127be}{static const unsigned \hyperlink{classConnectN_a0098050ba1e1691aa2bab3eeacd127be}{M\+I\+N\+\_\+\+P\+O\+W\+E\+R} = 3}\label{classConnectN_a0098050ba1e1691aa2bab3eeacd127be}
+
+\begin{DoxyCompactList}\small\item\em Minimum allowed power. \end{DoxyCompactList}\item 
+\hypertarget{classConnectN_a785bea2a4b4bf7b12d5611afc309096b}{static const unsigned \hyperlink{classConnectN_a785bea2a4b4bf7b12d5611afc309096b}{M\+A\+X\+\_\+\+P\+O\+W\+E\+R} = 10}\label{classConnectN_a785bea2a4b4bf7b12d5611afc309096b}
+
+\begin{DoxyCompactList}\small\item\em Maximum allowed power. \end{DoxyCompactList}\item 
+\hypertarget{classConnectN_aba6b11a59052663b23cb2a9611d25d2f}{static const unsigned \hyperlink{classConnectN_aba6b11a59052663b23cb2a9611d25d2f}{D\+E\+L\+T\+A\+\_\+\+L\+I\+N\+E} = \hyperlink{classConnectN_a785bea2a4b4bf7b12d5611afc309096b}{M\+A\+X\+\_\+\+P\+O\+W\+E\+R} + 10}\label{classConnectN_aba6b11a59052663b23cb2a9611d25d2f}
+
+\begin{DoxyCompactList}\small\item\em Maximum line number depending on the maximum allowed power. \end{DoxyCompactList}\item 
+\hypertarget{classConnectN_a111b3987f792f8dca47d857f3f88ba61}{static const unsigned \hyperlink{classConnectN_a111b3987f792f8dca47d857f3f88ba61}{D\+E\+L\+T\+A\+\_\+\+C\+O\+L\+U\+M\+N} = \hyperlink{classConnectN_a785bea2a4b4bf7b12d5611afc309096b}{M\+A\+X\+\_\+\+P\+O\+W\+E\+R} + 10}\label{classConnectN_a111b3987f792f8dca47d857f3f88ba61}
+
+\begin{DoxyCompactList}\small\item\em Maximum column number depending on the maximum allowed power. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+The \hyperlink{classConnectN}{Connect\+N} game. 
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{classConnectN_afbc5b3f1ce192977e53400984d532d1b}{\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}}\label{classConnectN_afbc5b3f1ce192977e53400984d532d1b}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+O\+W\+E\+R@{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+O\+W\+E\+R}!Connect\+N@{Connect\+N}}\index{Connect\+N@{Connect\+N}!D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+O\+W\+E\+R@{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+O\+W\+E\+R}}\item[{\em 
+\hypertarget{classConnectN_afbc5b3f1ce192977e53400984d532d1ba8dabbd51219a23e08073e6c946755bc8}{D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+O\+W\+E\+R}\label{classConnectN_afbc5b3f1ce192977e53400984d532d1ba8dabbd51219a23e08073e6c946755bc8}
+}]Default power. \index{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+N\+E@{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+N\+E}!Connect\+N@{Connect\+N}}\index{Connect\+N@{Connect\+N}!D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+N\+E@{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+N\+E}}\item[{\em 
+\hypertarget{classConnectN_afbc5b3f1ce192977e53400984d532d1bae24544d9408db101c664328a5c00137c}{D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+N\+E}\label{classConnectN_afbc5b3f1ce192977e53400984d532d1bae24544d9408db101c664328a5c00137c}
+}]Default line. \index{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+U\+M\+N@{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+U\+M\+N}!Connect\+N@{Connect\+N}}\index{Connect\+N@{Connect\+N}!D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+U\+M\+N@{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+U\+M\+N}}\item[{\em 
+\hypertarget{classConnectN_afbc5b3f1ce192977e53400984d532d1ba1ebbe9aa1e009f66a6c5c022f5ee0e50}{D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+U\+M\+N}\label{classConnectN_afbc5b3f1ce192977e53400984d532d1ba1ebbe9aa1e009f66a6c5c022f5ee0e50}
+}]Default column. \end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{classConnectN_ae4c655de7116f32bf84ba01d8fa09455}{\index{Connect\+N@{Connect\+N}!Connect\+N@{Connect\+N}}
+\index{Connect\+N@{Connect\+N}!Connect\+N@{Connect\+N}}
+\subsubsection[{Connect\+N}]{\setlength{\rightskip}{0pt plus 5cm}Connect\+N\+::\+Connect\+N (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{classConnectN_ae4c655de7116f32bf84ba01d8fa09455}
+
+
+Default \hyperlink{classConnectN}{Connect\+N} constructor. 
+
+D\+E\+F\+A\+U\+L\+T\+\_\+\+P\+O\+W\+E\+R, D\+E\+F\+A\+U\+L\+T\+\_\+\+L\+I\+N\+E and D\+E\+F\+A\+U\+L\+T\+\_\+\+C\+O\+L\+U\+M\+N are used as default values. \hypertarget{classConnectN_aef059ecefe9eafeae4c9fa8806b14a43}{\index{Connect\+N@{Connect\+N}!Connect\+N@{Connect\+N}}
+\index{Connect\+N@{Connect\+N}!Connect\+N@{Connect\+N}}
+\subsubsection[{Connect\+N}]{\setlength{\rightskip}{0pt plus 5cm}Connect\+N\+::\+Connect\+N (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{power, }
+\item[{unsigned}]{line, }
+\item[{unsigned}]{column}
+\end{DoxyParamCaption}
+)}}\label{classConnectN_aef059ecefe9eafeae4c9fa8806b14a43}
+
+
+Custom \hyperlink{classConnectN}{Connect\+N} constructor. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em power} & number of pieces to align \\
+\hline
+{\em line} & number of lines of the board \\
+\hline
+{\em column} & number of columns of the board \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{classConnectN_abaedcab14c58c5fc5621f76a271a7744}{\index{Connect\+N@{Connect\+N}!active\+Player@{active\+Player}}
+\index{active\+Player@{active\+Player}!Connect\+N@{Connect\+N}}
+\subsubsection[{active\+Player}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Player}$\ast$ Connect\+N\+::active\+Player (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classConnectN_abaedcab14c58c5fc5621f76a271a7744}
+
+
+Return the active player. 
+
+\begin{DoxyReturn}{Returns}
+the active player if any, {\ttfamily nullptr} otherwise 
+\end{DoxyReturn}
+\hypertarget{classConnectN_adc7bac377c8a1ff4976a424bdf6627c8}{\index{Connect\+N@{Connect\+N}!board@{board}}
+\index{board@{board}!Connect\+N@{Connect\+N}}
+\subsubsection[{board}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::vector$<$std\+::vector$<${\bf Color}$>$ $>$\& Connect\+N\+::board (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classConnectN_adc7bac377c8a1ff4976a424bdf6627c8}
+
+
+Return the game board. 
+
+\begin{DoxyReturn}{Returns}
+the game board 
+\end{DoxyReturn}
+\hypertarget{classConnectN_a1f044297c006496edb2fe9f2cdc61f2d}{\index{Connect\+N@{Connect\+N}!color@{color}}
+\index{color@{color}!Connect\+N@{Connect\+N}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Color} Connect\+N\+::color (
+\begin{DoxyParamCaption}
+\item[{const {\bf Player} $\ast$}]{}
+\end{DoxyParamCaption}
+) const}}\label{classConnectN_a1f044297c006496edb2fe9f2cdc61f2d}
+
+
+Return the color of the given player. 
+
+\begin{DoxyReturn}{Returns}
+the color of the given player 
+\end{DoxyReturn}
+\hypertarget{classConnectN_a40cc2c86197b7502276490ec1399b0b4}{\index{Connect\+N@{Connect\+N}!column@{column}}
+\index{column@{column}!Connect\+N@{Connect\+N}}
+\subsubsection[{column}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Connect\+N\+::column (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classConnectN_a40cc2c86197b7502276490ec1399b0b4}
+
+
+Return the number of columns. 
+
+\begin{DoxyReturn}{Returns}
+the number of columns 
+\end{DoxyReturn}
+\hypertarget{classConnectN_aeacffa2ecadbf102749c668073df72ad}{\index{Connect\+N@{Connect\+N}!enroll@{enroll}}
+\index{enroll@{enroll}!Connect\+N@{Connect\+N}}
+\subsubsection[{enroll}]{\setlength{\rightskip}{0pt plus 5cm}void Connect\+N\+::enroll (
+\begin{DoxyParamCaption}
+\item[{const {\bf Player} $\ast$}]{player}
+\end{DoxyParamCaption}
+)}}\label{classConnectN_aeacffa2ecadbf102749c668073df72ad}
+
+
+Enroll a player. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em player} & the player to enroll \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::invalid\+\_\+argument} & if the given player is already enrolled \\
+\hline
+{\em std\+::logic\+\_\+error} & if two players are already enrolled \\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classConnectN_aea9a731ecfed4ec40af668de60b8b311}{\index{Connect\+N@{Connect\+N}!finished@{finished}}
+\index{finished@{finished}!Connect\+N@{Connect\+N}}
+\subsubsection[{finished}]{\setlength{\rightskip}{0pt plus 5cm}bool Connect\+N\+::finished (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classConnectN_aea9a731ecfed4ec40af668de60b8b311}
+
+
+Check if the game is finished. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the game is finished, {\ttfamily false} otherwise 
+\end{DoxyReturn}
+\hypertarget{classConnectN_afc8593800090e0d19532e9bdeefabac9}{\index{Connect\+N@{Connect\+N}!line@{line}}
+\index{line@{line}!Connect\+N@{Connect\+N}}
+\subsubsection[{line}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Connect\+N\+::line (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classConnectN_afc8593800090e0d19532e9bdeefabac9}
+
+
+Return the number of lines. 
+
+\begin{DoxyReturn}{Returns}
+the number of lines 
+\end{DoxyReturn}
+\hypertarget{classConnectN_a1bb5f50f1e29d34c48cc9231afe76af6}{\index{Connect\+N@{Connect\+N}!play@{play}}
+\index{play@{play}!Connect\+N@{Connect\+N}}
+\subsubsection[{play}]{\setlength{\rightskip}{0pt plus 5cm}void Connect\+N\+::play (
+\begin{DoxyParamCaption}
+\item[{unsigned}]{column}
+\end{DoxyParamCaption}
+)}}\label{classConnectN_a1bb5f50f1e29d34c48cc9231afe76af6}
+
+
+Play at the given column. 
+
+This method tries to drop a piece in the column given as parameter. If it works, the board is checked to see if N pieces are aligned. If true, the winner is the current player; if not, the other player becomes the current player, and the game continues. 
+\begin{DoxyParams}{Parameters}
+{\em column} & the column where to play \\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em std\+::logic\+\_\+error} & if
+\begin{DoxyItemize}
+\item the game is not started
+\item the game is finished 
+\end{DoxyItemize}\\
+\hline
+{\em std\+::out\+\_\+of\+\_\+range} & if
+\begin{DoxyItemize}
+\item the column is full
+\item the column given as parameter is out of the board 
+\end{DoxyItemize}\\
+\hline
+\end{DoxyExceptions}
+\hypertarget{classConnectN_af9520dc89721a2702c8f6747d3711c44}{\index{Connect\+N@{Connect\+N}!players@{players}}
+\index{players@{players}!Connect\+N@{Connect\+N}}
+\subsubsection[{players}]{\setlength{\rightskip}{0pt plus 5cm}const std\+::array$<$std\+::pair$<$const {\bf Player} $\ast$, {\bf Color}$>$, 2$>$ Connect\+N\+::players (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classConnectN_af9520dc89721a2702c8f6747d3711c44}
+
+
+Return an array of players, associated with their color. 
+
+\begin{DoxyReturn}{Returns}
+an array of players, associated with their color 
+\end{DoxyReturn}
+\hypertarget{classConnectN_a297db626a235c0bebfc276cb4b818cd6}{\index{Connect\+N@{Connect\+N}!power@{power}}
+\index{power@{power}!Connect\+N@{Connect\+N}}
+\subsubsection[{power}]{\setlength{\rightskip}{0pt plus 5cm}unsigned Connect\+N\+::power (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classConnectN_a297db626a235c0bebfc276cb4b818cd6}
+
+
+Return the number of pieces to align. 
+
+\begin{DoxyReturn}{Returns}
+the number of pieces to align 
+\end{DoxyReturn}
+\hypertarget{classConnectN_a52e76a27a6ae77edcf65a24c67cfe83a}{\index{Connect\+N@{Connect\+N}!started@{started}}
+\index{started@{started}!Connect\+N@{Connect\+N}}
+\subsubsection[{started}]{\setlength{\rightskip}{0pt plus 5cm}bool Connect\+N\+::started (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classConnectN_a52e76a27a6ae77edcf65a24c67cfe83a}
+
+
+Check if the game is started. 
+
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} if the game is started, {\ttfamily false} otherwise 
+\end{DoxyReturn}
+\hypertarget{classConnectN_a234490fe29ede9056f1fadc4dddd087b}{\index{Connect\+N@{Connect\+N}!winner@{winner}}
+\index{winner@{winner}!Connect\+N@{Connect\+N}}
+\subsubsection[{winner}]{\setlength{\rightskip}{0pt plus 5cm}const {\bf Player}$\ast$ Connect\+N\+::winner (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const}}\label{classConnectN_a234490fe29ede9056f1fadc4dddd087b}
+
+
+Return the winner. 
+
+\begin{DoxyReturn}{Returns}
+the winner if any, {\ttfamily nullptr} otherwise 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\hyperlink{ConnectN_8h}{Connect\+N.\+h}\item 
+src/Connect\+N.\+cpp\end{DoxyCompactItemize}
