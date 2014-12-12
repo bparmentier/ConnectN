@@ -9,3 +9,9 @@ ConnectN is a variant of Connect Four/Four in a row. You choose the number of
 pieces to align, the number of lines/columns of the board and the names of the
 two players. Then, alternately, each player tries to align its color (assigned
 at random).
+
+Documentation
+-------------
+
+Generate Doxygen documentation by running the `doxygen` command in the project
+root.
